@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>써도 되나?</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!--Google Font link-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+        .navbar-nav .nav-link {
+            color: #000 !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #6c63ff !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #6c63ff !important;
+        }
+
+        .btn-primary {
+            background-color: #6c63ff;
+            border: none;
+            position: relative;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #5548c8;
+        }
+
+        .btn-primary.loading {
+            pointer-events: none;
+        }
+
+        .btn-primary.loading:after {
+            content: '';
+            position: absolute;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spinner 0.75s linear infinite;
+        }
+
+        @keyframes spinner {
+            to { transform: rotate(360deg); }
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-section {
+            background-color: #000;
+            padding: 50px 0;
+        }
+
+        .footer {
+            background-color: #fff;
+            padding: 50px 0;
+            color: #000;
+        }
+
+        .footer .widget_item {
+            margin-bottom: 30px;
+        }
+
+        .search-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none;
+        }
+
+        .search-popup input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .search-popup button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default bootsnav navbar-fixed">
+    <div class="container">
+        <div class="attr-nav">
+            <ul>
+                <li class="search"><a href="#" id="search-icon"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#brand">
+                <img src="assets/images/logo.png" class="logo" alt="">
+            </a>
+        </div>
+        <!-- End Header Navigation -->
+
+        <!-- navbar menu -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#search" class="nav-link">제품 소비기한 조회</a></li>
+                <li><a href="#look" class="nav-link">내 제품 소비기한 한눈에 보기</a></li>
+                <li><a href="#print" class="nav-link">라벨지 출력하기</a></li>
+                <li><a href="#calender" class="nav-link">캘린더 일정 확인하기</a></li>
+                <li><a href="#" class="btn btn-primary text-white">Login</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<!-- Product Section -->
+<section id="product" class="product-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <img src="assets/images/Medicine.png" class="Medicine" alt=" "> <!--약 사진이 안 들어가요-->
+            </div>
+            <div class="col-md-6 product-details">
+                <h3>체리맛 감기약</h3>
+                <p>제조일자: 2024-03-23</p>
+                <p>소비기한: 2025-03-23</p>
+                <button class="btn btn-primary btn-block" id="print-button">눌러서 출력하기</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="widget_area">
+                <div class="col-md-3">
+                    <div class="widget_item widget_about">
+                        <h5 class="text-black">About Us</h5>
+                        <div class="widget_ab_item m-top-30">
+                            <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                            <div class="widget_ab_item_text">
+                                <h6 class="text-black">Email Address :</h6>
+                                <p>youremail@mail.com</p>
+                            </div>
+                        </div>
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-3 -->
+                <!-- Add more widgets as needed -->
+            </div>
+        </div>
+        <div class="main_footer fix text-center p-top-40 p-bottom-30">
+            <div class="col-md-12">
+                <p class="wow fadeInRight" data-wow-duration="1s">
+                    Made with
+                    <i class="fa fa-heart"></i>
+                    by
+                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a>
+                    2016. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="search-popup" id="search-popup">
+    <div>
+        <input type="text" id="search-query" placeholder="검색어를 입력하세요">
+        <button id="search-button">검색</button>
+    </div>
+</div>
+
+<!-- JS includes -->
+<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/css/slick/slick.js"></script>
+<script src="assets/css/slick/slick.min.js"></script>
+<script src="assets/js/jquery.collapse.js"></script>
+<script src="assets/js/bootsnav.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const printButton = document.querySelector('#print-button');
+        printButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            printButton.classList.add('loading');
+            printButton.textContent = '로딩 중...';
+            setTimeout(() => {
+                alert('출력이 완료되었습니다!');
+                printButton.classList.remove('loading');
+                printButton.textContent = '눌러서 출력하기';
+            }, 2000);
+        });
+
+        const searchIcon = document.querySelector('#search-icon');
+        const searchPopup = document.querySelector('#search-popup');
+        const searchButton = document.querySelector('#search-button');
+        searchIcon.addEventListener('click', function(event) {
+            event.preventDefault();
+            searchPopup.style.display = 'flex';
+        });
+        searchButton.addEventListener('click', function() {
+            const searchQuery = document.querySelector('#search-query').value;
+            if (searchQuery) {
+                alert(`검색어: ${searchQuery}`);
+                searchPopup.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
