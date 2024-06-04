@@ -25,20 +25,43 @@
 
         <style>
             #look {
-
                 background: url('assets/images/lip.png') no-repeat center center;
-                background-size: cover;
+                /*background-size: cover;*/
                 padding: 100px 0;
+                padding-top: 200px;
             }
             .overlay {
-
                 background: rgba(0, 0, 0, 0.1); /* Optional: for a dark overlay */
             }
             .products {
                 background: #f8f9fa;
                 padding-top: 50px;
             }
-            
+            body, html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .culmn {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            .products {
+                flex: 1;
+                background: #f8f9fa;
+                padding-top: 50px;
+            }
+            footer {
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                background-color: #000;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
         </style>
     </head>
 
@@ -84,7 +107,7 @@
 
                             <li class="active"><a href="look.html" class="menu">내 제품 소비기한 한눈에 보기</a></li>
                             <li><a href="print.html" class="menu">라벨지 출력하기</a></li>
-                            <li><a href="#calendar" class="menu">캘린더 일정 확인하기</a></li>
+                            <li><a href="calender.html" class="menu">캘린더 일정 확인하기</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
@@ -122,7 +145,7 @@
                                     <p>제조일자: 2024-05-07</p>
                                     <p>소비기한: 2024-05-12 (5일)</p>
 
-                                    <a href="#" class="btn btn-primary">캘린더에 등록하기</a>
+                                    <a href="calender.html" class="btn btn-primary">캘린더에 등록하기</a>
                                     <a href="print.html" class="btn btn-primary">소비기한 라벨지 출력하기</a>
                                 </div>
                             </div>
@@ -139,29 +162,18 @@
                         <div class="widget_area">
                             <div class="col-md-3">
                                 <div class="widget_item widget_about">
-                                    <h5 class="text-white">About Us</h5>
+                                    <h5 class="text-white">문의사항</h5>
                                     <div class="widget_ab_item m-top-30">
                                         <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
                                         <div class="widget_ab_item_text">
                                             <h6 class="text-white">Email Address :</h6>
-                                            <p>youremail@mail.com</p>
+                                            <p>Already3grade@mail.com</p>
                                         </div>
                                     </div>
                                 </div><!-- End off widget item -->
                             </div><!-- End off col-md-3 -->
 
                         </div>
-                    </div>
-                </div>
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
-                    <div class="col-md-12">
-                        <p class="wow fadeInRight" data-wow-duration="1s">
-                            Made with 
-                            <i class="fa fa-heart"></i>
-                            by 
-                            <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
-                            2016. All Rights Reserved
-                        </p>
                     </div>
                 </div>
             </footer>
