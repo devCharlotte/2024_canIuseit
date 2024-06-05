@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>써도 되나?</title>
+  <link rel="stylesheet" href="/resources/css/bootstrap.css">
+  <link rel="stylesheet" href="/resources/css/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/">
+        <img src="/resources/images/logo.png" alt="써도되나" title="써도되나">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse m-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-5 ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">제품 소비기한 조회</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">내 제품 소비기한 한눈에 보기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/label">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">캘린더 일정 확인하기</a>
+          </li>
+        </ul>
+        <button class="btn btn-look" onClick="location.href='/login'">로그인</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="look-image">
+    <div class="look-text">
+      <p class="h0 mb-0 mt-5 text-white font-weight-bolder text-center d-block">내 제품 소비기한 한 눈에 보기</p>
+      <p class="h4 mt-3 mb-5 text-white text-center d-block">그동한 조회했던 제품들의 소비기한을 모아봤어요.</p>
+    </div>
+    <img src="/resources/images/1.jpg" class="d-block w-100 img" alt="메인 비주얼 이미지 1" title="메인 비주얼 이미지 1">
+  </div>
+
+  <div class="container-xl mt-5 look">
+    <% products.forEach(product => { %>
+      <div id="basket" class="col-4 float-left">
+        <div class="col-12">
+          <div id="area">
+            <img src="<%= product.image %>" alt="<%= product.name %>" class="w-100">
+          </div>
+          <div id="basket-list">
+            <p class="font-weight-bolder d-block h4 mb-0"><%= product.name %></p>
+            <p class="d-block h5 gray mb-0">제조일자: <%= product.manufactureDate %></p>
+            <p class="d-block h5">소비기한: <%= product.expiryDate %></p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기</button>
+        <button type="button" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기</button>
+      </div>
+    <% }) %>
+  </div>
+
+  <br>
+  
+  <footer id="footer">
+    <div class="look-line mt-5"></div>
+    <img src="/resources/images/logo.png" class="mt-5 center" alt="">
+    <img src="/resources/images/sns.png" class="d-block mt-2 sns center" alt="">
+    <p class="text-dark mt-0 center">Copyright(c) 2024 써도 되나?. All rights reserved.</p>
+  </footer>
+</body>
+</html>
