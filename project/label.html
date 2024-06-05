@@ -25,11 +25,11 @@
           <li class="nav-item">
             <a class="nav-link" href="look.html">내 제품 소비기한 한눈에 보기</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="label.html">라벨지 출력하기</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">캘린더 일정 확인하기</a>
+            <a class="nav-link" href="#">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calender.html">캘린더 일정 확인하기</a>
           </li>
         </ul>
         <button class="btn btn-look" onClick="location.href='login.html'">로그인</button>
@@ -37,17 +37,30 @@
     </div>
   </nav>
         <div class="container-xl">
-            <div class="container">
-                <!-- Login Section -->
-                <section class="login-section">
-                    <h1>로그인</h1>
-                    <a href="#" class="btn btn-google">Google 계정으로 로그인하기</a>
-                    <a href="#" class="btn btn-naver">NAVER 로그인하기</a>
-                    <p>By clicking continue, you agree to our Terms of Service and Privacy Policy</p>
-                </section>
+            <div class="label-text">
+            <p class="h2 mb-0 mt-5 text-black font-weight-bolder ml-5 text-left d-block">라벨지 출력하기</p>
+            <p class="h5 mt-3 mb-5 text-black text-left d-block ml-5">제품에 붙일 수 있도록 라벨기와 연동되어 있어요. 이제 오프라인에서도 소비기한을 확인하세요.</p>
             </div>
         </div>
 
+     <div class="container-xl mt-5">
+        <section id="product" class="product-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <img src="resources/images/2.jpg" class="medicine w-100" alt=" "> 
+                    </div>
+                    <!-- look에서 라벨지 출력을 누르면 해당 제품이 나올 수 있도록 제작해야함 -->
+                    <div class="col-md-6 product-details"> 
+                        <p class="h2 mb-0 mt-6 text-black font-weight-bolder ml-5 text-left d-block">체리맛 감기약</p>
+                        <p class="h5 mb-0 mt-2 text-black ml-5 text-left d-block">제조기한: 2000-00-00</p>
+                        <p class="h5 mb-0 mt-2 mb-4 text-black ml-5 text-left d-block">사용기한: 2000-00-00</p>
+                        <button class="btn btn-primary btn-block" id="print-button">눌러서 출력하기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </div>
 
 
     
