@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>써도 되나?</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="써도되나" title="써도되나">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse m-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-5 ml-auto">
+          <li class="nav-item active d-inline text-right">
+            <a class="nav-link" href="#">제품 소비기한 조회</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/look">내 제품 소비기한 한눈에 보기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/label">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">캘린더 일정 확인하기</a>
+          </li>
+        </ul>
+        <button class="btn btn-look" onClick="location.href='/login'">로그인</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="image">
+    <div class="main-text">
+      <p class="h1 mb-0 text-white font-weight-bolder text-center d-block">당신이 사용하고 있는 모든 것에는</p>
+      <p class="h1 mt-0 mb-3 text-white font-weight-bolder text-center d-block">소비기한이 있다는 사실을 알고 계신가요?</p>
+      <p class="h2 mb-5 text-white font-weight-bolder text-center d-block">걱정마세요, '써도 되나?'가 계산해줄게요!</p>
+    </div>
+    <div class="date">
+      <form class="row g-3 mt-5">
+        <div class="col-auto">
+            <input type="date" class="form-control" style="border-radius: 10px; margin-top: 20px; padding-left: 20px; float: left;">
+        </div>
+        <select name="type" class="form-control" style="border-radius: 10px; margin-top: 20px; padding-left: 20px; float: left;">
+          <option value=""> type select</option>
+            <option value="strawberry">화장품</option>
+            <option value="banana">의약품</option>
+            <option value="mango">식품</option>
+            <option value="melon">기타</option>
+        </select>
+        <h3 style="font-size: 30px; color: white; margin-top: 20px; float: left; margin-left: 50px;">▶</h3>
+        <div class="col-auto">
+            <input type="text" class="form-control" style="border-radius: 10px; margin-top: 20px; float: left; margin-left: 50px;" placeholder="YEAR-MONTH_DAY">
+        </div>
+      </form>
+    </div>
+    <div class="btn">
+      <a href="#" class="btn btn-date">내 계정에 해당 제품 등록하기</a>
+    </div>
+    <img src="/images/home_bg.jpg" class="d-block w-100" alt="메인 비주얼 이미지 1" title="메인 비주얼 이미지 1">
+  </div>
+
+  <footer id="footer">
+    <div class="container-xl">
+      <div class="line mt-5"></div>
+      <img src="/images/logo.png" class="mt-5" alt="">
+      <img src="/images/sns.png" class="d-block mt-2 sns" alt="">
+      <p class="text-dark">Copyright(c) 2024 써도 되나?. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

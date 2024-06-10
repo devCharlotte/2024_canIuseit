@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>써도 되나?</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="써도되나" title="써도되나">
+      </a>
+      <!-- 모바일 버전에서 상호작용 가능한 버튼. 마우스를 올리면 메인 메뉴 보임. -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse m-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-5 ml-auto">
+          <li class="nav-item d-inline text-right">
+            <a class="nav-link" href="/">제품 소비기한 조회</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/look">내 제품 소비기한 한눈에 보기</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">캘린더 일정 확인하기</a>
+          </li>
+        </ul>
+        <button class="btn btn-look" onClick="location.href='/login'">로그인</button>
+      </div>
+    </div>
+  </nav>
+        <div class="container-xl">
+            <div class="label-text">
+            <p class="h2 mb-0 mt-5 text-black font-weight-bolder ml-5 text-left d-block">라벨지 출력하기</p>
+            <p class="h5 mt-3 mb-5 text-black text-left d-block ml-5">제품에 붙일 수 있도록 라벨기와 연동되어 있어요. 이제 오프라인에서도 소비기한을 확인하세요.</p>
+            </div>
+        </div>
+
+     <div class="container-xl mt-5">
+        <section id="product" class="product-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <img src="/images/2.jpg" class="medicine w-100" alt=" "> 
+                    </div>
+                    <!-- look에서 라벨지 출력을 누르면 해당 제품이 나올 수 있도록 제작해야함 -->
+                    <div class="col-md-6 product-details"> 
+                        <p class="h2 mb-0 mt-6 text-black font-weight-bolder ml-5 text-left d-block">체리맛 감기약</p>
+                        <p class="h5 mb-0 mt-2 text-black ml-5 text-left d-block">제조기한: 2000-00-00</p>
+                        <p class="h5 mb-0 mt-2 mb-4 text-black ml-5 text-left d-block">사용기한: 2000-00-00</p>
+                        <button class="btn btn-look btn-block" id="print-button">눌러서 출력하기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </div>
+
+  <footer id="footer">
+    <div class="container-xl">
+      <div class="line mt-5"></div>
+      <img src="/images/logo.png" class="mt-5" alt="">
+      <img src="/images/sns.png" class="d-block mt-2 sns" alt="">
+      <p class="text-dark">Copyright(c) 2024 써도 되나?. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

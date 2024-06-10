@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>써도 되나?</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="써도되나" title="써도되나">
+      </a>
+      <!-- 모바일 버전에서 상호작용 가능한 버튼. 마우스를 올리면 메인 메뉴 보임. -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse m-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-5 ml-auto">
+          <li class="nav-item d-inline text-right">
+            <a class="nav-link" href="/">제품 소비기한 조회</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">내 제품 소비기한 한눈에 보기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/label">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">캘린더 일정 확인하기</a>
+          </li>
+        </ul>
+        <button class="btn btn-look" onClick="location.href='/login'">로그인</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="look-image">
+    <div class="look-text">
+      <p class="h0 mb-0 mt-5 text-white font-weight-bolder text-center d-block">내 제품 소비기한 한 눈에 보기</p>
+      <p class="h4 mt-3 mb-5 text-white text-center d-block">그동한 조회했던 제품들의 소비기한을 모아봤어요.</p>
+    </div>
+    <img src="/images/1.jpg" class="d-block w-100 img" alt="메인 비주얼 이미지 1" title="메인 비주얼 이미지 1">
+  </div>
+
+  <div class="container-xl mt-5 look">
+    <div id="basket" class="col-4 float-left">
+      <div class="col-12">
+        <div id="area">
+          <!-- 해당 자리에 제품 데이터베이스에 맞는 이미지가 들어가야함 -->
+        </div>
+        <div id="basket-list">
+          <!-- 해당 p 텍스트에 데이터베이스에 맞는 사용자가 등록한 이름, 제조일자, 계산된 소비기한이 들어가야함 -->
+          <p class="font-weight-bolder d-block h4 mb-0">맛있는 서양배</p>
+          <p class="d-block h5 gray mb-0">제조일자: 2000-00-00</p>
+          <p class="d-block h5">소비기한: 2000-00-00</p>
+        </div>
+      </div>
+      <a href="/label" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기<a>
+      <a href="/calendar" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기<a>
+    </div>
+    <div id="basket" class="col-4 float-left">
+      <div class="col-12">
+        <div id="area">
+          <!-- 해당 자리에 제품 데이터베이스에 맞는 이미지가 들어가야함 -->
+        </div>
+        <div id="basket-list">
+          <!-- 해당 p 텍스트에 데이터베이스에 맞는 사용자가 등록한 이름, 제조일자, 계산된 소비기한이 들어가야함 -->
+          <p class="font-weight-bolder d-block h4 mb-0">맛있는 서양배</p>
+          <p class="d-block h5 gray mb-0">제조일자: 2000-00-00</p>
+          <p class="d-block h5">소비기한: 2000-00-00</p>
+        </div>
+      </div>
+      <a href="/label" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기<a>
+      <a href="/calendar" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기<a>
+    </div>
+    <div id="basket" class="col-4 float-left">
+      <div class="col-12">
+        <div id="area">
+          <!-- 해당 자리에 제품 데이터베이스에 맞는 이미지가 들어가야함 -->
+        </div>
+        <div id="basket-list">
+          <!-- 해당 p 텍스트에 데이터베이스에 맞는 사용자가 등록한 이름, 제조일자, 계산된 소비기한이 들어가야함 -->
+          <p class="font-weight-bolder d-block h4 mb-0">맛있는 서양배</p>
+          <p class="d-block h5 gray mb-0">제조일자: 2000-00-00</p>
+          <p class="d-block h5">소비기한: 2000-00-00</p>
+        </div>
+      </div>
+      <a href="/label" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기<a>
+      <a href="/calendar" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기<a>
+    </div>
+
+    <!-- 여기까지 한줄 (3개) -->
+
+    <div id="basket" class="col-4 float-left mt-5 mb-5">
+      <div class="col-12">
+        <div id="area">
+          <!-- 해당 자리에 제품 데이터베이스에 맞는 이미지가 들어가야함 -->
+        </div>
+        <div id="basket-list">
+          <!-- 해당 p 텍스트에 데이터베이스에 맞는 사용자가 등록한 이름, 제조일자, 계산된 소비기한이 들어가야함 -->
+          <p class="font-weight-bolder d-block h4 mb-0">맛있는 서양배</p>
+          <p class="d-block h5 gray mb-0">제조일자: 2000-00-00</p>
+          <p class="d-block h5">소비기한: 2000-00-00</p>
+        </div>
+      </div>
+      <a href="/label" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기<a>
+      <a href="/calendar" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기<a>
+    </div>
+    <div id="basket" class="col-4 float-left mt-5 mb-5">
+      <div class="col-12">
+        <div id="area">
+          <!-- 해당 자리에 제품 데이터베이스에 맞는 이미지가 들어가야함 -->
+        </div>
+        <div id="basket-list">
+          <!-- 해당 p 텍스트에 데이터베이스에 맞는 사용자가 등록한 이름, 제조일자, 계산된 소비기한이 들어가야함 -->
+          <p class="font-weight-bolder d-block h4 mb-0">맛있는 서양배</p>
+          <p class="d-block h5 gray mb-0">제조일자: 2000-00-00</p>
+          <p class="d-block h5">소비기한: 2000-00-00</p>
+        </div>
+      </div>
+      <a href="/label" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기<a>
+      <a href="/calendar" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기<a>
+    </div>
+    <div id="basket" class="col-4 float-left mt-5 mb-5">
+      <div class="col-12">
+        <div id="area">
+          <!-- 해당 자리에 제품 데이터베이스에 맞는 이미지가 들어가야함 -->
+        </div>
+        <div id="basket-list">
+          <!-- 해당 p 텍스트에 데이터베이스에 맞는 사용자가 등록한 이름, 제조일자, 계산된 소비기한이 들어가야함 -->
+          <p class="font-weight-bolder d-block h4 mb-0">맛있는 서양배</p>
+          <p class="d-block h5 gray mb-0">제조일자: 2000-00-00</p>
+          <p class="d-block h5">소비기한: 2000-00-00</p>
+        </div>
+      </div>
+      <a href="/label" class="btn btn-look btn-block mb-0">소비기한 라벨지 출력하기<a>
+      <a href="/calendar" class="btn btn-look2 btn-block mb-3">해당 제품 캘린더에 등록하기<a>
+    </div>
+  
+  <footer id="footer">
+    <div class="container-xl">
+      <div class="line mt-5"></div>
+      <img src="/images/logo.png" class="mt-5" alt="">
+      <img src="/images/sns.png" class="d-block mt-2 sns" alt="">
+      <p class="text-dark">Copyright(c) 2024 써도 되나?. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>  

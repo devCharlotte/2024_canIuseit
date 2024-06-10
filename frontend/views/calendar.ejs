@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>써도 되나?</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="써도되나" title="써도되나">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse m-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-5 ml-auto">
+          <li class="nav-item d-inline text-right">
+            <a class="nav-link" href="/">제품 소비기한 조회</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/look">내 제품 소비기한 한눈에 보기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/label">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">캘린더 일정 확인하기</a>
+          </li>
+        </ul>
+        <button class="btn btn-look" onClick="location.href='/login'">로그인</button>
+      </div>
+    </div>
+  </nav>
+        <div class="container-xl">
+            <div class="label-text">
+            <p class="h2 mb-0 mt-5 text-black font-weight-bolder ml-5 text-left d-block">캘린더 일정 확인하기</p>
+            <p class="h5 mt-3 mb-5 text-black text-left d-block ml-5">내 계정과 연동된 캘린더에서 소비기한을 편리하게 확인하세요.</p>
+            </div>
+        </div>
+
+     <div class="container-xl mt-5">
+        <iframe src="https://calendar.google.com/calendar/embed?src=ikon0623%40gmail.com&ctz=Asia%2FSeoul" style="border: 0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+     </div>
+
+
+    
+  <footer id="footer">
+    <div class="container-xl">
+      <div class="line mt-5"></div>
+      <img src="/images/logo.png" class="mt-5" alt="">
+      <img src="/images/sns.png" class="d-block mt-2 sns" alt="">
+      <p class="text-dark">Copyright(c) 2024 써도 되나?. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
