@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>써도 되나?</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="써도되나" title="써도되나">
+      </a>
+      <!-- 모바일 버전에서 상호작용 가능한 버튼. 마우스를 올리면 메인 메뉴 보임. -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse m-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-5 ml-auto">
+          <li class="nav-item d-inline text-right">
+            <a class="nav-link" href="/">제품 소비기한 조회</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/look">내 제품 소비기한 한눈에 보기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/label">라벨지 출력하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">캘린더 일정 확인하기</a>
+          </li>
+        </ul>
+        <button class="btn btn-look" onClick="location.href='#'">로그인</button>
+      </div>
+    </div>
+  </nav>
+        <div class="container-xl">
+            <div class="container">
+                <!-- Login Section -->
+                <section class="login-section">
+                    <h1>로그인</h1>
+                    <a href="/auth/google" class="btn btn-google">Google 계정으로 로그인하기</a>
+                    <a href="/auth/naver" class="btn btn-naver">NAVER 로그인하기</a>
+                    <p>By clicking continue, you agree to our Terms of Service and Privacy Policy</p>
+                </section>
+            </div>
+        </div>
+
+  <footer id="footer">
+    <div class="container-xl">
+      <div class="line mt-5"></div>
+      <img src="/images/logo.png" class="mt-5" alt="">
+      <img src="/images/sns.png" class="d-block mt-2 sns" alt="">
+      <p class="text-dark">Copyright(c) 2024 써도 되나?. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
