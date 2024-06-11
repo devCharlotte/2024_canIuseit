@@ -30,6 +30,10 @@ app.use(session({
     store: new FileStore()
 }));
 
+// 미들웨어 및 기타 설정
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // Passport 미들웨어 설정
 app.use(passport.initialize());
 app.use(passport.session());

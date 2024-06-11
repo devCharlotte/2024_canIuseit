@@ -14,7 +14,11 @@ exports.googleCallbackSuccess = (req, res) => {
       return res.redirect('/');
     }
     const token = req.user.generateJwt();
-    return res.redirect(`http://localhost:3000`);
+    
+	   // JWT 토큰을 쿼리 파라미터로 전달
+    return res.redirect(`http://localhost:3000?token=${token}`);
+
+	  //return res.redirect(`http://localhost:3000`);
   });
 };
 
